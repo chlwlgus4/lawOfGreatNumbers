@@ -23,16 +23,9 @@ class Solution {
         while (m > 0) {
             /*가장 큰 수를 K번 더하기*/
             for (int i = 0; i < k; i++) {
-                /*M이 0이라면 반복문 탈출*/
-                if (m == 0) {
-                    break;
-                }
                 result += first;
                 /*더할 때마다 1씩 빼기*/
                 m -= 1;
-            }
-            if (m == 0) {
-                break;
             }
             result += second;
             m -= 1;
